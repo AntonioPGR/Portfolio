@@ -1,8 +1,8 @@
+// COMPONENTS
+import { AppRoutes } from 'routes'
 // REACT
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// COMPONENTS
-import { AppRoutes } from 'routes'
 // STYLES
 import { ThemeProvider } from 'styled-components';
 import { defaultTheme } from 'styles/defaultTheme';

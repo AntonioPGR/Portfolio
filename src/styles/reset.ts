@@ -17,5 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${props => props.theme.typography.size.default};
     font-family: ${props => props.theme.typography.primary};
     text-decoration: none;
+    color: ${props => props.theme.colors.text};
+  }
+
+  body{
+    background-color: ${props => props.theme.colors.background};
   }
 `
