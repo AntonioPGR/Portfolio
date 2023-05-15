@@ -1,11 +1,21 @@
+// REACT
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// COMPONENTS
+import { AppRoutes } from 'routes'
+// STYLES
+import { ThemeProvider } from 'styled-components';
+import { defaultTheme } from 'styles/defaultTheme';
+import { GlobalStyle } from 'styles/reset';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <h1>Hello</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <AppRoutes />
+    </ThemeProvider>
   </React.StrictMode>
 );

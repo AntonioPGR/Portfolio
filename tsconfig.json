@@ -28,6 +28,7 @@
     "noImplicitOverride": true,
   },
   "include": [
-    "src"
+    "src",
+    "src/interfaces/*.d.ts"
   ]
 }
