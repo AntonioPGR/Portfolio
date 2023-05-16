@@ -1,5 +1,8 @@
 // COMPONENTS
 import { HeroTitulo } from "./HeroTitulo"
+// IMAGES
+import DefaultImage from "images/default.svg"
+// STYLES
 import { StyledHero } from "./style"
 
 
@@ -7,9 +10,9 @@ export const Hero = () => {
   return (
     <StyledHero>
       <HeroTitulo />
-      {/* <div className="hero__imagem">
-        <img src="https://img.freepik.com/fotos-gratis/perfil-de-um-homem-barbudo-estiloso-que-fez-um-novo-penteado-na-barbearia_176420-18800.jpg?w=2000" alt="" />
-      </div> */}
+      <div className="hero__imagem">
+        <img src={DefaultImage} alt="default just for tests" />
+      </div>
     </StyledHero>
   )
 }

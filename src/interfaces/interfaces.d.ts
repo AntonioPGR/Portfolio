@@ -5,3 +5,6 @@ declare interface ILink{
   target?: '_Blank' | '_Self',
   rel?: string,
 }
+
+
+declare type TPosition =  'Left' | 'Center' | 'Right'
