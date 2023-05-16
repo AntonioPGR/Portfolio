@@ -7,6 +7,7 @@ declare module 'styled-components' {
       background: string,
       background_contrast: string,
       text: string,
+      text_contrast: string
     },
     typography:{
       primary: string,

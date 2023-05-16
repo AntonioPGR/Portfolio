@@ -1,4 +1,5 @@
 import { AboutMe } from "components/AboutMe"
+import { Contact } from "components/Contact"
 import { Hero } from "components/Hero"
 
 
@@ -8,6 +9,7 @@ export const LandingPage = () => {
     <>
       <Hero />
       <AboutMe />
+      <Contact />
     </>
   )
 
