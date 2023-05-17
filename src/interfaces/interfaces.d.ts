@@ -6,5 +6,12 @@ declare interface ILink{
   rel?: string,
 }
 
+declare interface ISkill {
+  id: number,
+  nome: string,
+  descricao: string,
+  icone: string,
+  inicio_estudo
+}
 
 declare type TPosition =  'Left' | 'Center' | 'Right'

@@ -16,9 +16,9 @@ export const StyledHeroTitle = styled.div`
       display: block;
       line-height: 120px;
     }
-    .colorized{
-      color: ${props => props.theme.colors.action};
-    }
   }
-
+  
+  .colorized{
+    color: ${props => props.theme.colors.action};
+  }
 `

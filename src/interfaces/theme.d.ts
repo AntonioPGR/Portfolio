@@ -16,6 +16,7 @@ declare module 'styled-components' {
         small: string,
         default: string,
         large: string,
+        largex: string,
         titles: string,
         headings: string
       },

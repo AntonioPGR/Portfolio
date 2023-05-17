@@ -15,6 +15,7 @@ export const defaultTheme : DefaultTheme = {
       small: '16px',
       default: '24px',
       large: '32px',
+      largex: '40px',
       titles: '56px',
       headings: '156px'
     },
