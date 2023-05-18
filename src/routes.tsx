@@ -6,16 +6,18 @@ import { Footer } from 'components/Footer'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 // PAGES
 import { LandingPage } from 'pages/landingPage'
+import { Projects } from 'pages/projects'
 
 export const AppRoutes = () => {
   return (
     <Router>
       
-      <Header links={[{label: "Github", href:"https://www.github.com", id:1}]} />
+      <Header />
 
       <Main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path='/projetos' element={<Projects />} />
         </Routes>
       </Main>
 

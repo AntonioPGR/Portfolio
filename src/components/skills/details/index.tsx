@@ -10,7 +10,7 @@ export const Details = () => {
     <StyledDetail>
       <h3> {language.nome} </h3>
       <p> {language.descricao} </p>
-      <p> Tive meu primeiro contato com esta linguagem em {language.inicio_estudo} </p>
+      <p> Tive meu primeiro contato em {language.inicio_estudo} </p>
     </StyledDetail>
   )
 }

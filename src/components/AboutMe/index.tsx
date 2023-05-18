@@ -1,4 +1,4 @@
-import { TituloSessao } from "components/TituloSessao"
+import { TituloSessao } from "components/Hero/TituloSessao"
 import { StyledAboutMe } from "./style"
 import DefaultImage from "images/default.svg"
 
@@ -6,18 +6,21 @@ import DefaultImage from "images/default.svg"
 
 export const AboutMe = () => {
   return (
-    <StyledAboutMe>
+    <StyledAboutMe id="aboutMe">
       <TituloSessao position="Right">
         Quem sou eu?
       </TituloSessao>
       <div className="content">
         <img src={DefaultImage} alt="default just for tests" />
-        <div>
+        <div className="paragraphs">
           <p>
-            Um estudante de programação apaixonado por tecnologia e principalmente desenvolvimento web, em resumo, esse sou eu. Olá! Me chamo Antonio Pacheco, e desde os 14 anos estudo programação e tenho certeza de que desejo trabalhar nessa área pelo resto da minha vida. Sou mineiro, nascido em Poços de Caldas, e atualmente estou cursando menor aprendiz na empresa Curimbaba. Meu objetivo é mostrar ao mundo meus projetos e habilidades em programação, com responsabilidade, competência e coragem para aprender novas tecnologias.
+            Estudante de programação apaixonado por tecnologia e desenvolvimento web, em resumo, esse sou eu.
           </p>
           <p>
-            Busco sempre me superar, sendo melhor a cada dia, e trago comigo a esperança de fazer a diferença através da tecnologia. Quero que meu portfólio seja uma vitrine de tudo o que aprendi até agora, destacando minha paixão pela programação e minha dedicação em criar projetos inovadores e de qualidade. Seja bem-vindo ao meu portfólio, onde você poderá conhecer um pouco mais sobre mim e meus projetos na área de desenvolvimento web!
+            Olá! Me chamo Antonio Pacheco, e desde os 14 anos estudo programação e desejo trabalhar nessa área pelo resto da minha vida. Sou mineiro, nascido em Poços de Caldas e tenho o objetivo de mostrar ao mundo meus projetos e habilidades em programação, buscando sempre me superar, sendo melhor a cada dia e tendo a esperança de fazer a diferença através da tecnologia. 
+          </p>
+          <p>
+            Seja bem vindo ao meu portfólio, espero que sirva como uma vitrine para demonstrar tudo o que aprendi até agora, todo meu conhecimento disponível e que possa lhe mostrar toda minha paixão e carinho pela área de tecnologia!
           </p>
         </div>
       </div>

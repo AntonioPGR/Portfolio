@@ -1,4 +1,4 @@
-import { TituloSessao } from "components/TituloSessao"
+import { TituloSessao } from "components/Hero/TituloSessao"
 import { StyledContact } from "./style"
 import { FormInput } from "./Input"
 import { Botao } from "components/Botao"
@@ -31,7 +31,7 @@ export const Contact = () => {
   }
 
   return (
-    <StyledContact>
+    <StyledContact id="contact">
       <TituloSessao position="Center">
         Contato
       </TituloSessao>

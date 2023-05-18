@@ -21,4 +21,12 @@ declare interface ISocialMedia {
   link: string
 }
 
+declare interface IProject {
+  id: number,
+  name: string,
+  description: string,
+  link: string,
+  image: string
+}
+
 declare type TPosition =  'Left' | 'Center' | 'Right'

@@ -5,7 +5,7 @@ export const StyledDetail = styled.div`
   background-color: ${props => props.theme.colors.background_contrast};
   padding: ${props => props.theme.spacing.medium};
   border-radius: ${props => props.theme.spacing.defaultBorderRadius};
-  height: 300px;
+  height: 200px;
 
   display: flex;
   flex-flow: column nowrap;

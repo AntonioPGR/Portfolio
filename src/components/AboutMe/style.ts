@@ -9,9 +9,16 @@ export const StyledAboutMe = styled.section`
   .content{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: ${props => props.theme.spacing.large};
+  
+    .paragraphs{
+      display: flex;
+      flex-flow: column wrap;
+      gap: ${props => props.theme.spacing.medium};
+    }
+
   }
 
 `

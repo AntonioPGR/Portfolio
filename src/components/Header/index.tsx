@@ -1,31 +1,34 @@
 import { Logo } from "./Logo"
-import { LinkNav } from "./LinkNav"
 import { StyledHeader } from "./style"
+import { Link, useLocation } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
 
-export interface PropsHeader {
-  links: ILink[]
-}
-export const Header = ({ links }:PropsHeader) => {
+
+export const Header = () => {
+  const location = useLocation()
+
+  const getLinks = () => {
+    if (location.pathname === '/') {
+      return(
+        <>
+          <Link to="/projetos">Projetos</Link>
+          <HashLink to="#aboutMe">Sobre</HashLink>
+          <HashLink to="#skills">Habilidades</HashLink>
+          <HashLink to="#contact">Contato</HashLink>
+        </>
+      )
+    }
+    return(
+      <Link to="/">Home</Link>
+    )
+  }
 
   return (
     <StyledHeader>
       <div className="content">
         <Logo />
         <nav>
-          {
-            links.map((link) => {
-              return (
-                <LinkNav
-                  id={link.id}
-                  key={link.id}
-                  href={link.href}
-                  target={link.target}
-                  rel={link.rel}
-                  label={link.label}
-                />
-              )
-            })
-          }
+          {getLinks()}
         </nav>
       </div>
     </StyledHeader>

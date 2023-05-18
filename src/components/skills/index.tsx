@@ -1,4 +1,4 @@
-import { TituloSessao } from "components/TituloSessao"
+import { TituloSessao } from "components/Hero/TituloSessao"
 import { SkillsList } from "./skillsList"
 import { StyledSkills } from "./style"
 import { Details } from "./details"
@@ -7,7 +7,7 @@ import { Details } from "./details"
 export const Skills = () => {
 
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
       <TituloSessao position="Left">
         Conhecimentos
       </TituloSessao>
