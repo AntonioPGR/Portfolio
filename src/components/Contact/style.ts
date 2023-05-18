@@ -25,4 +25,12 @@ export const StyledContact = styled.section`
     gap: ${props => props.theme.spacing.medium};
   }
 
+  .success{
+    color: green;
+  }
+
+  .warning{
+    color: #C21010;
+  }
+
 `

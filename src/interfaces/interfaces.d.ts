@@ -14,4 +14,11 @@ declare interface ISkill {
   inicio_estudo
 }
 
+declare interface ISocialMedia {
+  id: number,
+  nome: string,
+  icone: string,
+  link: string
+}
+
 declare type TPosition =  'Left' | 'Center' | 'Right'

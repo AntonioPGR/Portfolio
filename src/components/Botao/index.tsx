@@ -8,7 +8,7 @@ export interface PropsBotao {
 
 export const Botao = ({children, onClick}:PropsBotao) => {
   return (
-    <StyledBotao onClick={() => onClick}>
+    <StyledBotao type="submit" onClick={() => onClick}>
       {children}
     </StyledBotao>
   )

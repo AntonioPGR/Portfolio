@@ -6,7 +6,7 @@ export const defaultTheme : DefaultTheme = {
     background: "#0C293C",
     background_contrast: "#1B587D",
     text: "#EEEEEE",
-    text_contrast: "#EEEEEE"
+    text_contrast: "#BBB"
   },
   typography:{
     primary: "'Open sans', sans-serif",

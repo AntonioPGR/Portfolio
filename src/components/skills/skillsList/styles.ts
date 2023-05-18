@@ -29,8 +29,4 @@ export const StyledSkillsList = styled.ul`
     }
   }
 
-  li:hover{
-    filter: brightness(.6);
-  }
-
 `

@@ -1,3 +1,4 @@
+import { StyledCaption } from "../style/styledFormField";
 import { StyledLabel, StyledInputContainer} from "./style"
 import { HTMLInputTypeAttribute } from "react";
 
@@ -6,21 +7,29 @@ export interface PropsFormInput {
   icon?: string,
   label?: string,
   placeholder?: string,
-  largeHeight?: boolean
+  caption?:string,
+  name: string
 }
 
-export const FormInput = ({icon, label, placeholder, type, largeHeight}:PropsFormInput) => {
+export const FormInput = ({icon, label, placeholder, type, caption, name}:PropsFormInput) => {
 
   return (
     <div>
-      <StyledLabel htmlFor={label}> {label} </StyledLabel>
-      <StyledInputContainer icon={icon} largeHeight={largeHeight}>
+      {
+        label &&
+        <StyledLabel htmlFor={label}> {label} </StyledLabel>
+      }
+      <StyledInputContainer icon={icon}>
         {
           icon &&
           <i><img src={icon} alt={`Icone de ${icon}`} /></i>
         }
-        <input type={type || 'text'} placeholder={placeholder} name={label} />
+        <input type={type || 'text'} placeholder={placeholder} name={name} />
       </StyledInputContainer>
+      {
+        caption &&
+        <StyledCaption className="caption">Ex: {caption} </StyledCaption>
+      }
     </div>
   )
 
