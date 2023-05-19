@@ -1,4 +1,4 @@
-import { StyledCaption } from "../style/styledFormField";
+import { StyledCaption } from "../Contact/style/styledFormField";
 import { StyledLabel, StyledInputContainer} from "./style"
 import { HTMLInputTypeAttribute } from "react";
 
@@ -8,7 +8,7 @@ export interface PropsFormInput {
   label?: string,
   placeholder?: string,
   caption?:string,
-  name: string
+  name?: string
 }
 
 export const FormInput = ({icon, label, placeholder, type, caption, name}:PropsFormInput) => {

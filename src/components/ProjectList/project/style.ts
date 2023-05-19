@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const StyledProjetoContainer = styled.article`
+export const StyledProject = styled.article`
+  overflow: hidden;
   max-width: 423px;
   width: 100%;
   display: flex;

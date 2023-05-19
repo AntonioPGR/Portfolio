@@ -1,5 +1,6 @@
 import { Botao } from "components/Botao"
-import { StyledProjetoContainer } from "./style"
+import { StyledProject } from "./style"
+import { FiltroTags } from "components/FiltroTags"
 
 interface PropsProject {
   project: IProject
@@ -7,8 +8,9 @@ interface PropsProject {
 
 export const Project = ({project}:PropsProject) => {
   return (
-    <StyledProjetoContainer>
+    <StyledProject>
       <img alt={`Print da página do projeto ${project.name}`} src={project.image} />
+      <FiltroTags />
       <h2>{project.name}</h2>
       <p>
         {project.description}
@@ -16,6 +18,6 @@ export const Project = ({project}:PropsProject) => {
       <a href={project.link} target="_Blank" rel="noreferrer">
         <Botao > Ver projeto </Botao>
       </a>
-    </StyledProjetoContainer>
+    </StyledProject>
   )
 }

@@ -1,10 +1,12 @@
-import { ProjectList } from "components/ProjectList"
+import { ProjectsList } from "components/ProjectList"
+import { ProjectsFilters } from "components/ProjectsFilter"
 
 export const Projects = () => {
 
   return (
     <>
-      <ProjectList />
+      <ProjectsFilters />
+      <ProjectsList />
     </>
   )
 

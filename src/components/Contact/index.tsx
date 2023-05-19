@@ -1,26 +1,24 @@
 import { TituloSessao } from "components/Hero/TituloSessao"
 import { StyledContact } from "./style"
-import { FormInput } from "./Input"
+import { FormInput } from "components/Input"
 import { Botao } from "components/Botao"
 import { FormTextArea } from "./TextArea"
 import { SocialMedia } from "./SocialMedia"
 import { sendForm } from 'emailjs-com'
 import { useRef, useState } from "react"
+import env from "react-dotenv";
 
 
 export const Contact = () => {
 
-  const SERVICE_ID = 'service_19qupfj'
-  const TEMPLATE_ID = 'template_bjsutmh'
-  const USER_ID = '7WF2j6knCp3rvTL4M'
-
   const form = useRef<HTMLFormElement>(null)
-  const [wasMessageSend, setWasMessageSend] = useState<boolean|null>(null) 
+  const [wasMessageSend, setWasMessageSend] = useState<boolean|null|undefined>(null) 
 
   const handleSubmit = (ev:React.FormEvent<HTMLFormElement>) => {
     ev.preventDefault()
-    
-    sendForm(SERVICE_ID, TEMPLATE_ID, form.current as HTMLFormElement, USER_ID)
+
+    setWasMessageSend(undefined)
+    sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current as HTMLFormElement, env.USER_ID)
       .then((result) => {
         setWasMessageSend(true)
       }, (error) => {
@@ -30,19 +28,28 @@ export const Contact = () => {
     form.current?.reset()
   }
 
+  const renderInfoMessage = () => {
+    if(wasMessageSend === null){
+      return
+    }
+    if(wasMessageSend === undefined){
+      return <p>Enviando sua mensagem...</p>
+    }
+    return (
+      <p className={wasMessageSend? 'success':'warning'} >
+        {wasMessageSend? 'Email enviado com sucesso!':'Erro ao enviar email!'}
+      </p>
+    )
+
+  }
+
   return (
     <StyledContact id="contact">
       <TituloSessao position="Center">
         Contato
       </TituloSessao>
-
       <form ref={form} onSubmit={(ev) => handleSubmit(ev)} className="form">
-        {
-          wasMessageSend != null &&
-          <p className={wasMessageSend? 'success':'warning'} >
-            {wasMessageSend? 'Email enviado com sucesso!':'Erro ao enviar email!'}
-          </p>
-        }
+        { renderInfoMessage() }
         <FormInput name="user_email" label="Email" type="email" caption="antoninhopgr@gmail.com" />
         <div className="form__line">
           <FormInput name="user_name" label="Nome" type="text" caption="Antonio Pacheco" />

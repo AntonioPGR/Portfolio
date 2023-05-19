@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { StyledBaseInputContainer, StyledLabel } from "../style/styledFormField"
+import { StyledBaseInputContainer, StyledLabel } from "../Contact/style/styledFormField"
 
 export const StyledInputContainer = styled(StyledBaseInputContainer)<{icon?:string}>`
   display: grid;
@@ -9,9 +9,14 @@ export const StyledInputContainer = styled(StyledBaseInputContainer)<{icon?:stri
   gap: ${props=>props.theme.spacing.small};
   min-height: 56px;
 
-  img{
-    height: 24px;
-    width: auto;
+  i{
+    display: flex;
+    align-items: center;
+
+    img{
+      height: 24px;
+      width: auto;
+    }
   }
 `
 

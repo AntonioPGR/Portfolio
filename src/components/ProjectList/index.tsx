@@ -1,16 +1,16 @@
 import { Project } from "./project"
-import { StyledProjectList } from "./style"
+import { StyledProjectsContainer } from "./style"
 import { data_projects } from "data/projects"
 
 
-export const ProjectList = () => {
+export const ProjectsList = () => {
   return (
-    <StyledProjectList>
+    <StyledProjectsContainer>
       {
         data_projects.map((project) => {
           return <Project project={project} key={project.id} />
         })
       }
-    </StyledProjectList>
+    </StyledProjectsContainer>
   )
 }
