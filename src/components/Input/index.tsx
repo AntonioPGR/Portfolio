@@ -8,10 +8,11 @@ export interface PropsFormInput {
   label?: string,
   placeholder?: string,
   caption?:string,
-  name?: string
+  name?: string,
+  onChange?: (ev:React.ChangeEvent<HTMLInputElement>) => void
 }
 
-export const FormInput = ({icon, label, placeholder, type, caption, name}:PropsFormInput) => {
+export const FormInput = ({icon, label, placeholder, type, caption, name, onChange}:PropsFormInput) => {
 
   return (
     <div>
@@ -24,7 +25,7 @@ export const FormInput = ({icon, label, placeholder, type, caption, name}:PropsF
           icon &&
           <i><img src={icon} alt={`Icone de ${icon}`} /></i>
         }
-        <input type={type || 'text'} placeholder={placeholder} name={name} />
+        <input onChange={(ev) => onChange? onChange(ev): ""} type={type || 'text'} placeholder={placeholder} name={name} />
       </StyledInputContainer>
       {
         caption &&

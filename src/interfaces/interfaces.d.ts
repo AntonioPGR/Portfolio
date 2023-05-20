@@ -14,6 +14,11 @@ declare interface ISkill {
   inicio_estudo
 }
 
+declare interface ILanguageTag {
+  id: number,
+  nome: string
+}
+
 declare interface ISocialMedia {
   id: number,
   nome: string,
@@ -26,7 +31,8 @@ declare interface IProject {
   name: string,
   description: string,
   link: string,
-  image: string
+  image: string,
+  languages: ILanguageTag[]
 }
 
 declare type TPosition =  'Left' | 'Center' | 'Right'

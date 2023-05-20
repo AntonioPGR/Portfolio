@@ -7,7 +7,6 @@ export const StyledProject = styled.article`
   display: flex;
   flex-flow: column nowrap;
   gap: ${props => props.theme.spacing.small};
-  height: 365px;
 
   img{
     width: 100%;
