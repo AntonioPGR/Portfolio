@@ -78,7 +78,7 @@ export const data_projects: IProject[] = [
   {
     id: 4,
     name: 'Pichau Store',
-    description: "Um 'clone' da loja de pcs online pichau",
+    description: "Um 'clone' da loja de PCs online pichau",
     image: "/images/projetos/pichauStore.png",
     link: "https://pichau-store-clone.vercel.app/",
     languages: [

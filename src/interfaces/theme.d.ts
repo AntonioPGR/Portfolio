@@ -32,5 +32,11 @@ declare module 'styled-components' {
       regular: number,
       bold: number,
     },
+    breakpoints: {
+      small_cellphohe: string,
+      large_cellphone: string,
+      tablet: string,
+      laptop: string
+    }
   }
 }

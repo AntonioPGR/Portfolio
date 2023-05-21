@@ -4,8 +4,10 @@ export const StyledProject = styled.article`
   overflow: hidden;
   max-width: 423px;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
+  margin: auto;
   gap: ${props => props.theme.spacing.small};
 
   img{
@@ -26,7 +28,6 @@ export const StyledProject = styled.article`
     -webkit-line-clamp: 3; /* number of lines to show */
             line-clamp: 3; 
     -webkit-box-orient: vertical;
-    height: 100%;
   }
 `
 export const StyledFilterContainer = styled.div`

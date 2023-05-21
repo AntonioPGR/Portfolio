@@ -29,6 +29,12 @@ export const defaultTheme : DefaultTheme = {
   },
   weight: {
     regular: 400,
-    bold: 700,
+    bold: 600,
   },
+  breakpoints: {
+    small_cellphohe: '320px',
+    large_cellphone: '414px',
+    tablet: '768px',
+    laptop: '1024px'
+  }
 }
