@@ -16,7 +16,7 @@ declare interface ISkill {
 
 declare interface ILanguageTag {
   id: number,
-  nome: string
+  label: string
 }
 
 declare interface ISocialMedia {

@@ -8,11 +8,11 @@ export const data_projects: IProject[] = [
     languages: [
       {
         id: 1,
-        nome: "JAVASCRIPT"
+        label: "JAVASCRIPT"
       },
       {
         id: 2,
-        nome: "HTML"
+        label: "HTML"
       },
     ]
   },
@@ -25,11 +25,11 @@ export const data_projects: IProject[] = [
     languages: [
       {
         id: 2,
-        nome: "HTML"
+        label: "HTML"
       },
       {
         id: 3,
-        nome: "PYTHON"
+        label: "PYTHON"
       },
     ]
   },

@@ -1,4 +1,4 @@
-import { StateCurrentSkill } from "../states/currentSkill"
+import { StateCurrentSkill } from "states/currentSkill"
 import { StyledDetail } from "./style"
 import {useRecoilValue} from 'recoil'
 

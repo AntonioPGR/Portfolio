@@ -2,7 +2,7 @@ import { useRecoilState } from "recoil"
 import { Skill } from "./skill"
 import { StyledSkillsList } from "./styles"
 import { data_skills } from "data/skills"
-import { StateCurrentSkill } from "../states/currentSkill"
+import { StateCurrentSkill } from "states/currentSkill"
 
 
 export const SkillsList = () => {
