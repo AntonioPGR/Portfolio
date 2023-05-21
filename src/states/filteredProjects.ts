@@ -12,9 +12,9 @@ const filterProjectsByName = (projects:IProject[], query:string) => {
 
 const filterProjectsByLanguages = (projects:IProject[], filter_languages:ILanguageTag[]) => {
   return projects.filter((project) => {
-    return filter_languages.some((filter_language) => {
+    return filter_languages.every((filter_language) => {
       return project.languages.some((projectLanguage) => {
-        return projectLanguage.label.toLowerCase() === filter_language.label.toLowerCase();
+        return projectLanguage.id === filter_language.id;
       })
     })
   })

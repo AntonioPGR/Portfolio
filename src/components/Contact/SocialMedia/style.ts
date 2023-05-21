@@ -17,6 +17,10 @@ export const StyledSocialMedia = styled.div`
     img{
       width: 100%;
       height: auto;
+
+      &:hover{
+        filter: brightness(.8);
+      }
     }
   }
 

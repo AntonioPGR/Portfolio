@@ -19,11 +19,15 @@ export const Contact = () => {
 
     setWasMessageSend(undefined)
     sendForm(env.SERVICE_ID, env.TEMPLATE_ID, form.current as HTMLFormElement, env.USER_ID)
-      .then((result) => {
-        setWasMessageSend(true)
-      }, (error) => {
-        setWasMessageSend(false)
-      });
+    .then((result) => {
+      setWasMessageSend(true)
+    }, (error) => {
+      setWasMessageSend(false)
+    });
+
+    setTimeout(() => {
+      setWasMessageSend(null)
+    }, 5000)
 
     form.current?.reset()
   }

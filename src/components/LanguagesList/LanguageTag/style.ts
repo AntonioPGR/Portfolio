@@ -11,7 +11,7 @@ const getSelectableStyle = (theme: DefaultTheme ,selected?:boolean) => {
   return `
     color: ${theme.colors.action};
     cursor: pointer;
-    ${selected? ` filter: brightness(.9); `: ` &:hover{ filter: brightness(.9); } `}
+    ${selected? ` filter: brightness(.7); `: ` &:hover{ filter: brightness(.9); } `}
   `
 }
 

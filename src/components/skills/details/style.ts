@@ -14,6 +14,8 @@ export const StyledDetail = styled.div`
   h3 {
     font-size: ${props => props.theme.typography.size.largex};
     border-bottom: 3px solid ${props => props.theme.colors.background};
+    margin-bottom: ${props => props.theme.spacing.small};
+    font-weight: 600;
   }
 
 `

@@ -9,8 +9,8 @@ export const defaultTheme : DefaultTheme = {
     text_contrast: "#BBB"
   },
   typography:{
-    primary: "'Open sans', sans-serif",
-    emphasis: "'Open sans', sans-serif",
+    primary: "'Roboto Slab', serif",
+    emphasis: "'Roboto Slab', serif;",
     size: {
       small: '16px',
       default: '24px',
