@@ -5,8 +5,15 @@ export const StyledSkill = styled.li<{selected?:boolean}>`
 
   height: 92px;
   width: 92px;
+
   margin: auto;
   box-sizing: border-box;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  
   padding: ${props => props.theme.spacing.medium};
   background-color: ${props => props.theme.colors.background_contrast};
   border-radius:  ${props => props.theme.spacing.defaultBorderRadius};
@@ -20,8 +27,8 @@ export const StyledSkill = styled.li<{selected?:boolean}>`
   }
 
   img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
   }
 

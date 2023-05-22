@@ -24,10 +24,11 @@ const getUnselectableStyle = (theme: DefaultTheme) => {
 export const StyledLanguageTag = styled.div<PropsStyledLanguageTag>`
   border-radius: ${props=> props.theme.spacing.defaultBorderRadius};
   text-align: center;
-  padding: ${props => `${props.theme.spacing.small} ${props.theme.spacing.medium}`};
+  padding: ${props => `${props.theme.spacing.small} ${props.theme.spacing.medium} `};
   font-size: ${props => props.theme.typography.size.small };
   text-transform: uppercase;
   background: ${props=> props.theme.colors.background_contrast};
+  white-space: nowrap;
 
   ${props => props.$selectable? getSelectableStyle(props.theme, props.selected) : getUnselectableStyle(props.theme)}
 

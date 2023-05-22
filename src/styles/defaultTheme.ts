@@ -32,8 +32,8 @@ export const defaultTheme : DefaultTheme = {
     bold: 600,
   },
   breakpoints: {
-    small_cellphohe: '320px',
-    large_cellphone: '414px',
+    small_cellphohe: '364px',
+    large_cellphone: '500px',
     tablet: '768px',
     laptop: '1024px'
   }

@@ -1,4 +1,4 @@
-import { TituloSessao } from "components/Hero/TituloSessao"
+import { TituloSessao } from "components/TituloSessao"
 import { StyledContact } from "./style"
 import { FormInput } from "components/Input"
 import { Botao } from "components/Botao"

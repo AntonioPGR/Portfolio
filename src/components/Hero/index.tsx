@@ -10,9 +10,6 @@ export const Hero = () => {
   return (
     <StyledHero>
       <HeroTitulo />
-      {/* <div className="hero__imagem">
-        <img src={DefaultImage} alt="default just for tests" />
-      </div> */}
     </StyledHero>
   )
 }

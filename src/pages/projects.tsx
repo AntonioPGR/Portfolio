@@ -5,7 +5,7 @@ export const Projects = () => {
 
   return (
     <>
-      {/* <ProjectsFilters /> */}
+      <ProjectsFilters />
       <ProjectsList />
     </>
   )

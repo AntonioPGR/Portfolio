@@ -18,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colors.text};
   }
 
+  @media (max-width: ${props => props.theme.breakpoints.large_cellphone}){
+    *{
+      font-size: ${props => props.theme.typography.size.small};
+    }
+  }
+
   body{
     background-color: ${props => props.theme.colors.background};
   }

@@ -25,17 +25,23 @@ const getTextAligniment = (position:TPosition) => {
 
 export const StyledTituloSessao = styled.div<{position:TPosition}>`
 
-width: 100%;
-display: flex;
-justify-content: ${props => getItemsAligniment(props.position)};
-align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: ${props => getItemsAligniment(props.position)};
+  align-items: center;
 
-h2{
+  h2{
     padding: 8px 24px;
     width: ${props => props.position === 'Center'? '100%' : '75%'};
     background: ${props=>props.theme.colors.background_contrast};
     font-size: ${props => props.theme.typography.size.titles};
     color: ${props => props.theme.colors.text};
     text-align: ${props => getTextAligniment(props.position)};
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.large_cellphone}){
+    h2{
+      font-size: ${props => props.theme.typography.size.large};
+    }
   }
 `

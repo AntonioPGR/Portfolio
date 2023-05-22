@@ -1,13 +1,18 @@
-import { TituloSessao } from "components/Hero/TituloSessao"
+import { TituloSessao } from "components/TituloSessao"
 import { StyledAboutMe } from "./style"
 import DefaultImage from "images/default.svg"
+import { useState } from "react"
 
 
 
 export const AboutMe = () => {
+
+  const [windowWidth, ] = useState(window.innerWidth)
+
+
   return (
     <StyledAboutMe id="aboutMe">
-      <TituloSessao position="Right">
+      <TituloSessao position={windowWidth <= 768? 'Center' : 'Right'}>
         Quem sou eu?
       </TituloSessao>
       <div className="content">

@@ -1,4 +1,4 @@
-import { LanguageList } from "components/LanguagesList"
+import { LanguageList } from "./LanguagesList"
 import { Search } from "./Search"
 import { StyledProjectsFilters } from "./style"
 
