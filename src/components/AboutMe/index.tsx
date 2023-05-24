@@ -1,6 +1,6 @@
 import { TituloSessao } from "components/TituloSessao"
 import { StyledAboutMe } from "./style"
-import DefaultImage from "images/default.svg"
+import DefaultImage from "images/minha_foto.jpg"
 import { useState } from "react"
 
 
@@ -16,7 +16,9 @@ export const AboutMe = () => {
         Quem sou eu?
       </TituloSessao>
       <div className="content">
-        <img src={DefaultImage} alt="default just for tests" />
+        <div className="image__container">
+          <img src={DefaultImage} alt="default just for tests" />
+        </div>
         <div className="paragraphs">
           <p>
             Estudante de programação apaixonado por tecnologia e desenvolvimento web, em resumo, esse sou eu.

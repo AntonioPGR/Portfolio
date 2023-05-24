@@ -23,15 +23,29 @@ export const StyledAboutMe = styled.section`
       width: 100%;
       height: 100%;
       object-fit: cover;
+      max-height: 370px;
+      object-position: 0 5%;
+      border-radius: ${props => props.theme.spacing.largeBorderRadius};
     }
 
     @media screen and (max-width: ${props => props.theme.breakpoints.laptop}){
-      grid-template-columns: 2fr 5fr;
-    }
-
-    @media screen and (max-width: ${props => props.theme.breakpoints.tablet}){
       grid-template-columns: 1fr;
       grid-template-rows: 200px 1fr;
+
+      .image__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img{
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          object-position: 0 5%;
+          border-radius: ${props => props.theme.spacing.largeBorderRadius};
+        }
+      }
     }
 
   }
