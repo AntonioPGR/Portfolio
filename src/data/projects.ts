@@ -35,18 +35,18 @@ export const data_projects: IProject[] = [
   },
   {
     id: 2,
-    name: 'Laurant Bookstore 1',
-    description: "Primeiro projeto em Django, e consiste em uma basica livaria com livros e seus preços",
-    image: "/images/projetos/laurantBookstore1.png",
-    link: "https://www.github.com/AntonioPGR/Laurant-Bookstore",
+    name: 'Alura Books',
+    description: "Livraria online com autenticação e query, desenvolida em cursos da plataforma alura.",
+    image: "/images/projetos/alura-books.png",
+    link: "https://antoniopgr-alura-books.vercel.app",
     languages: [
       {
-        id: 4,
-        label: "PYTHON"
+        id: 1,
+        label: "Typescript"
       },
       {
-        id: 5,
-        label: "DJANGO"
+        id: 3,
+        label: "REACT"
       },
       {
         id: 2,
